@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Israel_Rodriguez_PruebaPichincha", "Israel_Rodriguez_PruebaPichincha\Israel_Rodriguez_PruebaPichincha.csproj", "{374026CB-2E2E-49B8-A054-006A858CFEE9}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0660C331-9872-47E6-BEAB-83EF2D9C75A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMySQL.Data", "NetCoreMySQL.Data\NetCoreMySQL.Data.csproj", "{B9383A1B-DEAA-4401-8ECC-53EB05F4EE5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMySql.Model", "NetCoreMySql.Model\NetCoreMySql.Model.csproj", "{3297D593-A54C-4A0C-8F87-D5836185A263}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{374026CB-2E2E-49B8-A054-006A858CFEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374026CB-2E2E-49B8-A054-006A858CFEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374026CB-2E2E-49B8-A054-006A858CFEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374026CB-2E2E-49B8-A054-006A858CFEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0660C331-9872-47E6-BEAB-83EF2D9C75A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0660C331-9872-47E6-BEAB-83EF2D9C75A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0660C331-9872-47E6-BEAB-83EF2D9C75A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0660C331-9872-47E6-BEAB-83EF2D9C75A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9383A1B-DEAA-4401-8ECC-53EB05F4EE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9383A1B-DEAA-4401-8ECC-53EB05F4EE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9383A1B-DEAA-4401-8ECC-53EB05F4EE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9383A1B-DEAA-4401-8ECC-53EB05F4EE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3297D593-A54C-4A0C-8F87-D5836185A263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3297D593-A54C-4A0C-8F87-D5836185A263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3297D593-A54C-4A0C-8F87-D5836185A263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3297D593-A54C-4A0C-8F87-D5836185A263}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6A47708-12E9-470F-8830-F6813E93EAEB}
+	EndGlobalSection
+EndGlobal

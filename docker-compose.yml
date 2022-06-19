@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  israel_rodriguez_pruebapichincha:
+    image: ${DOCKER_REGISTRY-}israelrodriguezpruebapichincha
+    build:
+      context: .
+      dockerfile: Israel_Rodriguez_PruebaPichincha/Dockerfile

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetCoreMySql.Model\NetCoreMySql.Model.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="MySQLConnection" />
+    <None Remove="Repositories\" />
+    <None Remove="Dapper" />
+    <None Remove="MySql.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MySQLConnection" Version="1.0.1" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="MySql.Data" Version="8.0.29" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+</Project>
