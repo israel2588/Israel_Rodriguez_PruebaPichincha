@@ -27,6 +27,7 @@ namespace Israel_Rodriguez_PruebaPichincha.Controllers
             return Ok(await _clienteRepository.GetAllClient());
         }
 
+
         // POST api/values
         [HttpPost]
         public async Task<IActionResult> CreateClient([FromBody] Cliente cliente)
@@ -40,6 +41,16 @@ namespace Israel_Rodriguez_PruebaPichincha.Controllers
             var created = await _clienteRepository.InsertClient(cliente);
 
             return Created("created", created);
+        }
+        
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteClient(int id)
+        {
+            await _clienteRepository.DeleteClient(new Cliente() {clienteid = id });
+
+            return NoContent();
+
+
         }
 
 

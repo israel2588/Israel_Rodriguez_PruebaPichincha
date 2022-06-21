@@ -16,7 +16,7 @@ namespace NetCoreMySQL.Data.Repositories
             _connectionString = connectionString;
         }
 
-        protected MySqlConnection dbConnection()
+        protected MySqlConnection DbConnection()
         {
             return new MySqlConnection(_connectionString.ConnectionString);
         }
@@ -24,16 +24,16 @@ namespace NetCoreMySQL.Data.Repositories
 
         public async Task<IEnumerable<Cliente>> GetAllClient()
         {
-            var db = dbConnection();
+            var db = DbConnection();
 
-            var sql = @"SELECT clienteid, contrasena, estado FROM cliente";
+            var sql = @"SELECT clienteid, contrasena, estado ,idpersona FROM cliente";
 
             return await db.QueryAsync<Cliente>(sql, new { });
         }
 
         public async Task<bool> UpdateClient(Cliente cliente)
         {
-            var db = dbConnection();
+            var db = DbConnection();
 
             var sql = @"
                         UPDATE cliente
@@ -49,7 +49,7 @@ namespace NetCoreMySQL.Data.Repositories
 
         public async Task<bool> InsertClient(Cliente cliente)
         {
-            var db = dbConnection();
+            var db = DbConnection();
 
             var sql = @"
                         INSERT INTO cliente (contrasena, estado, idPersona)
@@ -64,18 +64,16 @@ namespace NetCoreMySQL.Data.Repositories
 
         public async Task<bool> DeleteClient(Cliente cliente)
         {
-            var db = dbConnection();
+            var db = DbConnection();
 
             var sql = @"
-                        UPDATE cliente
-                        SET estado=@estado)
+                        DELETE
+                        FROM cliente
                         WHERE id=@id";
-            var result = await db.ExecuteAsync(sql, new { cliente.estado });
+            var result = await db.ExecuteAsync(sql, new { id = cliente.clienteid });
 
             return result > 0;
         }
-
-
-
+      
     }
 }

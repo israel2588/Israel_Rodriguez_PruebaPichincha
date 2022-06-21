@@ -30,6 +30,9 @@ namespace Israel_Rodriguez_PruebaPichincha
             var mySQLConnectionConfing = new MySQLConfiguration(Configuration.GetConnectionString("MySqlConnection"));
             services.AddSingleton(mySQLConnectionConfing);
             services.AddScoped<IPersonaRepository, PersonaRepository>();
+            services.AddScoped<IClienteRepository, ClienteRepository>();
+            services.AddScoped<ICuentaRepository, CuentaRepository>();
+            services.AddScoped<IMovimientoRepository, MovimientoRepository>();
 
             services.AddControllers();
         }
